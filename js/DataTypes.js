@@ -22,4 +22,10 @@ function givesum(val1, val2) {
     return val1 + val2;
 }
 console.log(givesum(1, 2));
+let details;
+details = {
+    id: 1,
+    name: 'aswin'
+};
+console.log(details.name);
 //# sourceMappingURL=DataTypes.js.map

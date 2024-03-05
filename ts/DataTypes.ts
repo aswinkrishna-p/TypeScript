@@ -78,3 +78,23 @@ function givesum (val1 :number , val2:number): number{
 
 console.log(givesum(1,2));
 
+
+
+
+// ----------------- objects in ts ----------------
+
+
+let details :{
+
+    id:number,
+    name : string,
+    
+}
+
+
+details ={
+    id:1,
+    name:'aswin'
+}
+
+console.log(details.name);
