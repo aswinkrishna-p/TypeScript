@@ -59,3 +59,34 @@ let employeeDetails : Employee = {
     print: () => {},
     write: () => {}
  }
+
+ //  -------------- literal types --------------
+
+ //   literal types are used to specify a value rather than a type 
+
+
+  // let def : number = 10  instead of giving type number we give a exact value 
+
+let len : 50  | 100 = 100 // we give the variable a value of 50 or 100 it cant be anything else
+
+
+type Length = 100 | 200  // this is called literal types
+
+
+let avglength : Length = 100
+
+
+//--------------- nullable types ---------------
+
+
+ function greet(name : string | null | undefined){
+     if(name){
+        console.log(name.toUpperCase());
+        
+     }else {
+        console.log('error');
+        
+     }
+ }
+
+ greet(undefined)
