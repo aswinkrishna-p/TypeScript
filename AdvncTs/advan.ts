@@ -90,3 +90,49 @@ let avglength : Length = 100
  }
 
  greet(undefined)
+
+
+ // ------------ interface ----------------
+
+
+ interface Person {
+    firstname :string,
+    lastname : string
+ }
+
+
+
+ function fullname (person:Person){
+   console.log(`${person.firstname} ${person.lastname}`);
+   
+ }
+
+
+ let gust  ={
+    firstname:'iron',
+    lastname: 'man'
+ }    
+
+ fullname(gust)
+
+
+ // ---------- class --------------------
+
+
+  class student {
+     studentname : string
+
+     constructor(name: string){
+       this.studentname = name
+     }
+
+     greet(){
+       console.log(`welcome to our campus ${this.studentname}`);
+       
+     }
+  }
+
+
+  let stud = new student('aswin')
+
+  stud.greet()
