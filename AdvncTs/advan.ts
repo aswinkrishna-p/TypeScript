@@ -136,3 +136,26 @@ let avglength : Length = 100
   let stud = new student('aswin')
 
   stud.greet()
+
+
+  // ------------ inheritance in class -----------
+
+
+  class teacher extends student {
+
+      constructor(teachername: string){
+         super(teachername)
+      }
+
+      teacherGreet(){
+         console.log(`welcome to the school ${this.studentname}`);
+         
+      }
+  }
+
+  let ts = new teacher('vivek')
+
+  ts.greet()
+  ts.teacherGreet()
+  console.log(ts.studentname);
+  
